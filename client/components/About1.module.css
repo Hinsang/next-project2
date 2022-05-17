@@ -1,0 +1,115 @@
+.flex {
+  justify-content: center;
+  vertical-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+.skill_1 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/html.png");
+}
+.skill_2 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/css.png");
+}
+.skill_3 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../skills/js.png");
+}
+.skill_4 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/scss.png");
+}
+.skill_5 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/bootstrap.png");
+}
+.skill_6 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/git.png");
+}
+.skill_7 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/react.png");
+}
+.skill_8 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/redux.png");
+}
+.skill_9 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/nodejs.png");
+}
+.skill_10 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/next.png");
+}
+.skill_11 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/express.png");
+}
+.skill_12 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../skills/mongo.png");
+}
+.skill_13 {
+  width: 100px;
+  height: 80px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: 100px 75%;
+  background-image: url("../skills/mysql.png");
+}

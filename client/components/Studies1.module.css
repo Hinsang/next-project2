@@ -1,0 +1,301 @@
+.s1 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../screenshot/1.jpg");
+}
+.s2 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../screenshot/2.jpg");
+}
+.s3 {
+  width: 100%;
+  height: 700px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 650px;
+  background-image: url("../screenshot/3.jpg");
+}
+.s4 {
+  width: 100%;
+  height: 600px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/4.PNG");
+}
+.s5 {
+  width: 100%;
+  height: 600px;
+  margin-top: -30px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/5.PNG");
+}
+.s6 {
+  width: 100%;
+  height: 600px;
+  margin-top: -30px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/6.PNG");
+}
+.s7 {
+  width: 100%;
+  height: 600px;
+  margin-top: -30px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/7.PNG");
+}
+.s8 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../screenshot/8.PNG");
+} 
+.s9 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../screenshot/9.PNG");
+}
+.s10 {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/10.jpg");
+}
+.s11 {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/11.PNG");
+}
+.s12 {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/12.PNG");
+}
+.s13 {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/13.PNG");
+}
+.s14 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/14.JPG");
+}
+.s15 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/15.png");
+}
+.s16 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/16.jpg");
+}
+.s17 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/17.png");
+}
+.s18 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/18.png");
+}
+.s19 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/19.jpg");
+}
+.s20 {
+  width: 49%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/20.JPG");
+}
+.s21 {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/21.png");
+}
+.s22 {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/22.png");
+}
+.s23 {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/23.png");
+}
+.s24 {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/24.png");
+}
+.s25 {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/25.png");
+}
+.s26 {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/26.png");
+}
+.s27 {
+  width: 100%;
+  height: 300px;
+  /* margin-top: -30px; */
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/projects.JPG");
+}
+.s28 {
+  width: 49%;
+  height: 700px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/nodebird1.JPG");
+}
+.s29 {
+  width: 49%;
+  height: 700px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/nodebird2.JPG");
+}
+.s30 {
+  width: 49%;
+  height: 700px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/nodebird3.JPG");
+}
+.s31 {
+  width: 49%;
+  height: 700px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/nodebird4.JPG");
+}
+.s32 {
+  width: 49%;
+  height: 700px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/nodebird5.JPG");
+}
+.s33 {
+  width: 49%;
+  height: 700px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/nodebird6.JPG");
+}

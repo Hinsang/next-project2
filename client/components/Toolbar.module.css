@@ -1,0 +1,62 @@
+.inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+.title {
+  /* display: inline-block;
+  box-sizing: border-box; */
+  color: #ccc;
+  font-size: 100px;
+  font-weight: 700;
+  text-shadow: 4px 2px 2px gray;
+}
+.title:hover {
+  cursor: pointer;
+}
+.toolbar_box {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+.toolbar_box:hover {
+  cursor: pointer;
+}
+.toolbar {
+  margin-right: 10px;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+.title_line {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+.side_toolbar {
+  padding: 5px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 20px;
+  cursor: pointer;
+}
+.side_toolbar:hover {
+  color: skyblue;
+  cursor: pointer;
+}
+.side_toolbar:active {
+  color: green;
+  cursor: pointer;
+}
+.side_toolbar_line {
+  margin-bottom: 100px;
+}
+.mark {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/mark.jpg");
+}
