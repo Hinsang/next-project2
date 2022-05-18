@@ -20,7 +20,7 @@ db.sequelize.sync().then(() => {
   console.log('db 연결 성공')
 }).catch(console.error) // 서버 실행할때 DB 시퀄라이즈 연결
 
-app.listen(process.env.PORT || 3065, () => {
+app.listen(3065, () => {
   console.log('서버 실행 중');
 });
 
