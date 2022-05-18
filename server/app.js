@@ -20,10 +20,6 @@ db.sequelize.sync().then(() => {
   console.log('db 연결 성공')
 }).catch(console.error) // 서버 실행할때 DB 시퀄라이즈 연결
 
-app.listen(3065, () => {
-  console.log('서버 실행 중');
-});
-
 // 많이 쓰는 명령어
 // app.get -> 가져오다
 // app.post -> 생성하다
@@ -79,3 +75,6 @@ app.get('/', (req, res) => {
       
       // }); // 에러처리 미들웨어는 내부적으로 잠재되어있지만 이렇게 4개의 매개변수로 따로 값을 변경해줄 수 있다.
       
+      app.listen(3065, () => {
+        console.log('서버 실행 중');
+      });
