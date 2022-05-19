@@ -6,21 +6,21 @@ module.exports = { // json 파일이면 dotenv를 못쓰므로 js파일로 바�
   development: {
     username: 'root',
     password: process.env.DB_PASSWORD,
-    database: 'next-project',
+    database: '',
     host: '127.0.0.1',
     dialect: 'mysql'
   },
   test: {
     username: 'root',
     password: process.env.DB_PASSWORD,
-    database: 'next-project',
+    database: '',
     host: '127.0.0.1',
     dialect: 'mysql'
   },
   production: {
     username: 'root',
     password: process.env.DB_PASSWORD,
-    database: 'next-project',
+    database: '',
     host: '127.0.0.1',
     dialect: 'mysql'
   }
