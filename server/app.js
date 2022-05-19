@@ -5,9 +5,10 @@ const passport = require('passport');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const dotenv = require('dotenv');
+const morgan = require('morgan');
 const path = require('path');
-// const hpp = require('hpp');
-// const helmet = require('helmet');
+const hpp = require('hpp');
+const helmet = require('helmet');
 // const postRouter = require('./routes/post');
 // const postsRouter = require('./routes/posts');
 const userRouter = require('./routes/user');
@@ -34,8 +35,15 @@ app.use(express.urlencoded({ extended: true })); // 프론트에서 받은 폼�
 
 passportConfig(); // passport 폴더 실행
 
+if (process.env.NODE_ENV === "proudction") {
+  app.use(morgan('combined')); // 배포 모드일때 로그가 자세해짐. 접속자의 ip도 알 수 있음
+  app.use(hpp());
+  app.use(helmet());
+} else {
+  app.use(morgan('dev'));
+}
 app.use(cors({
-  origin: 'https://loving-engelbart-35718e.netlify.app', // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
+  origin: ['http://localhost:3060', 'next-project.com'], // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
   credentials: true, // 도메인간에 쿠키 전달 (front saga에도 withCredentials: true 설정을 해주어야 한다.)
 }));
 app.use('/', express.static(path.join(__dirname, 'uploads'))) // express가 uploads폴더를 프론트에 제공
