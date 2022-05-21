@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 8000",
+    "start": "cross-env NODE_ENV=production next start -p 80",
     "app": "nodemon app",
     "export": "next export"
   },
