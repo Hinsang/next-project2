@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next -p 3000",
-    "build": "cross-env NODE_ENV=production next build",
+    "build": "NODE_ENV=production next build",
     "start": "cross-env NODE_ENV=production next start -p 80",
     "app": "nodemon app",
     "export": "next export"
