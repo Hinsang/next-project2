@@ -14,7 +14,7 @@ import { LOG_IN_FAILURE, LOG_IN_SUCCESS, LOG_IN_REQUEST,
 // }
 
 function loadMyInfoAPI() {
-  return axios.get('https://next-project-1.herokuapp.com/user'); // get요청은 data를 안보냄
+  return axios.get('user'); // get요청은 data를 안보냄
 }
 
 function* loadMyInfo() {
@@ -35,7 +35,7 @@ function* loadMyInfo() {
 function logInAPI(data) {
   // const { me } = useSelector((state) => state.user);
   // if (me) { console.log(me); }
-  return axios.post('https://next-project-1.herokuapp.com/user/login', data);
+  return axios.post('user/login', data);
 }
 function* logIn(action) {
   try {
@@ -55,7 +55,7 @@ function* logIn(action) {
 }
 
 function logOutAPI() {
-  return axios.post('https://next-project-1.herokuapp.com/user/logout');
+  return axios.post('user/logout');
 }
 
 function* logOut() {
@@ -73,7 +73,7 @@ function* logOut() {
 }
 
 function signUpAPI(data) {
-  return axios.post('https://next-project-1.herokuapp.com/user/signup', data);
+  return axios.post('user/signup', data);
 }
 
 function* signUp(action) {

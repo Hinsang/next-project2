@@ -3,8 +3,9 @@ import axios from 'axios';
 
 import userSaga from './user';
 import postSaga from './post';
+import { backUrl } from '../config/config';
 
-// axios.defaults.baseURL = 'https://next-project-1.herokuapp.com';
+axios.defaults.baseURL = backUrl;
 axios.defaults.withCredentials = true;
 // 서로 다른 도메인에서 credentials로 쿠키 전송을 원할하게 해줌
 
