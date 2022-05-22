@@ -1,6 +1,7 @@
 .inner {
   width: 1000px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .title {
   /* display: inline-block;
@@ -11,6 +12,17 @@
   text-shadow: 4px 2px 2px gray;
 }
 .title:hover {
+  cursor: pointer;
+}
+.toolbar_title {
+  display: inline-block;
+  background-image: url('../screenshot/next_project.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 100px;
+}
+.toolbar_title:hover {
   cursor: pointer;
 }
 .toolbar_box {
@@ -30,6 +42,7 @@
 }
 .title_line {
   border-bottom: 1px solid black;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 .side_toolbar {

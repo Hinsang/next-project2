@@ -21,9 +21,10 @@ function Toolbar() {
     <div className={styles.inner}>
       <div style={{ height: '10px' }} />
       <Link href="/">
-        <span className={styles.title}>
+        {/* <span className={styles.title}>
           NEXT
-        </span>
+        </span> */}
+        <div className={styles.toolbar_title} />
       </Link>
       <span>
         <div className={styles.mark} />
@@ -65,6 +66,9 @@ function Toolbar() {
       <Link href="/">
         <span className={styles.side_toolbar}>Home</span>
       </Link>
+      {/* <Link href="/Board/Post">
+        <span className={styles.side_toolbar}>Board</span>
+      </Link> */}
       <Link href="/Studies">
         <span className={styles.side_toolbar}>Studies</span>
       </Link>

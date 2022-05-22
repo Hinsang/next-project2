@@ -1,3 +1,17 @@
+.studies_link {
+  font-size: 50px;
+  text-align: center;
+}
+.studies_box {
+  width: 100px;
+  height: 80px;
+  border: solid 2px black;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.studies_link:hover {
+  cursor: pointer;
+}
 .s1 {
   width: 49%;
   height: 300px;
@@ -31,8 +45,9 @@
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-image: url("../screenshot/4.PNG");
+  margin-bottom: 50px;
 }
 .s5 {
   width: 100%;
@@ -41,8 +56,9 @@
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-image: url("../screenshot/5.PNG");
+  margin-bottom: 50px;
 }
 .s6 {
   width: 100%;
@@ -51,8 +67,9 @@
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-image: url("../screenshot/6.PNG");
+  margin-bottom: 50px;
 }
 .s7 {
   width: 100%;
@@ -61,26 +78,29 @@
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-image: url("../screenshot/7.PNG");
+  margin-bottom: 50px;
 }
 .s8 {
-  width: 49%;
-  height: 300px;
+  width: 100%;
+  height: 600px;
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../screenshot/8.PNG");
-} 
+  margin-bottom: 50px;
+}
 .s9 {
-  width: 49%;
-  height: 300px;
+  width: 100%;
+  height: 600px;
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../screenshot/9.PNG");
+  margin-bottom: 50px;
 }
 .s10 {
   width: 49%;
@@ -128,40 +148,45 @@
   background-image: url("../screenshot/14.JPG");
 }
 .s15 {
-  width: 49%;
-  height: 300px;
+  width: 100%;
+  height: 600px;
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../screenshot/15.png");
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .s16 {
-  width: 49%;
-  height: 300px;
-  display: inline-block;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../screenshot/16.jpg");
-}
-.s17 {
-  width: 49%;
-  height: 300px;
-  display: inline-block;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../screenshot/17.png");
-}
-.s18 {
-  width: 49%;
-  height: 300px;
+  width: 100%;
+  height: 800px;
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../screenshot/18.png");
+  margin-bottom: 50px;
+}
+.s17 {
+  width: 100%;
+  height: 1000px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/17.png");
+  margin-bottom: 50px;
+}
+.s18 {
+  width: 100%;
+  height: 800px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/16.jpg");
+  margin-bottom: 50px;
 }
 .s19 {
   width: 49%;
@@ -171,6 +196,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../screenshot/19.jpg");
+  margin-bottom: 50px;
 }
 .s20 {
   width: 49%;
@@ -298,4 +324,14 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../screenshot/nodebird6.JPG");
+}
+.s34 {
+  width: 100%;
+  height: 900px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../screenshot/doct1.JPG");
+  margin-top: 50px;
 }

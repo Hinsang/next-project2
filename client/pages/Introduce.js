@@ -10,7 +10,7 @@ const Introduce = () => {
     const typing = setInterval(() => {
       setText(text + sentence[count]);
       setCount(count + 1);
-    }, 150);
+    }, 100);
     if (sentence.length === count) {
       clearInterval(typing);
       setTimeout(() => {
