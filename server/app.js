@@ -43,7 +43,7 @@ if (process.env.NODE_ENV === "proudction") {
   app.use(morgan('dev'));
 }
 app.use(cors({
-  origin: ['http://localhost:3060', 'next-project.com', 'http://3.34.2.159'], // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
+  origin: ['http://localhost:3060', 'next-project.com', 'http://3.34.126.4'], // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
   credentials: true, // 도메인간에 쿠키 전달 (front saga에도 withCredentials: true 설정을 해주어야 한다.)
 }));
 app.use('/', express.static(path.join(__dirname, 'uploads'))) // express가 uploads폴더를 프론트에 제공
