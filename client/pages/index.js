@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import styles from '../styles/Home.module.css';
 import 'react-toastify/dist/ReactToastify.css';

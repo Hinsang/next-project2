@@ -1,7 +1,6 @@
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import Studies1 from '../components/Studies1';
-import styles from '../components/Studies1.module.css';
+import React from 'react';
+// import Studies1 from '../components/Studies1';
+// import styles from '../components/Studies1.module.css';
 import StudiesSection from '../components/StudiesSection';
 
 const Studies = () =>
