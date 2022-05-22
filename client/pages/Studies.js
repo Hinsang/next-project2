@@ -6,7 +6,6 @@ import StudiesSection from '../components/StudiesSection';
 const Studies = () => (
   <div style={{ width: '1000px', margin: '0 auto' }}>
     <StudiesSection />
-    {/* <Studies1 /> */}
     <br /><br /><br /><br /><br />
   </div>
 );
