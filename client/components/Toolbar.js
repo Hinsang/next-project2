@@ -69,7 +69,7 @@ function Toolbar() {
       {/* <Link href="/Board/Post">
         <span className={styles.side_toolbar}>Board</span>
       </Link> */}
-      <Link href="/Studies">
+      <Link href="/Studies/1">
         <span className={styles.side_toolbar}>Studies</span>
       </Link>
       <Link href="/Mypage">

@@ -77,16 +77,19 @@ function Signup() {
     <div style={{ width: '1000px', margin: '0 auto' }}>
       <Form onFinish={onSubmit}>
         <label htmlFor="user-id" style={{ marginRight: '5px' }}>아이디</label>
+        <br />
         <Input name="user-id" value={nickname} required onChange={onChangeId} />
         {idError && <Errormessage>아이디는 3자 이상으로 해주세요.</Errormessage>}
         <br />
         <br />
         <label htmlFor="user-password" style={{ marginRight: '5px' }}>비밀번호</label>
+        <br />
         <Input name="user-password" type="password" value={password} required onChange={onChangePassword} />
         {passwordError && <Errormessage>비밀번호는 3자 이상으로 해주세요.</Errormessage>}
         <br />
         <br />
         <label htmlFor="user-password" style={{ marginRight: '5px' }}>비밀번호 확인</label>
+        <br />
         <Input name="user-password" type="password" value={passwordCheck} required onChange={onChangePasswordCheck} />
         {passwordCheckError && <Errormessage>비밀번호가 일치하지 않습니다.</Errormessage>}
         <br />
