@@ -1,7 +1,8 @@
 import React from 'react';
 // import Studies1 from '../components/Studies1';
 // import styles from '../components/Studies1.module.css';
-import StudiesSection from '../components/StudiesSection';
+// eslint-disable-next-line import/extensions
+import StudiesSection from '../components/StudiesSection.js';
 
 const Studies = () => (
   <div style={{ width: '1000px', margin: '0 auto' }}>
