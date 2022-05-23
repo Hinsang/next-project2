@@ -114,3 +114,32 @@
     flex-direction: column;
   }
 }
+
+.content_box {
+  display: flex;
+}
+
+.content_inner {
+  width: 600px;
+  text-align: center;
+}
+
+.content {
+  font-size: 20px;
+  text-align: center;
+}
+
+.content_title {
+ font-weight: 900;
+ text-align: center;
+}
+
+.door {
+  background-image: url('../screenshot/열린문.webp');
+  background-repeat: no-repeat;
+  /* background-size: 400 400; */
+  display: inline-block;
+  opacity: 0.8;
+  width: 1000px;
+  height: 600px;
+}
