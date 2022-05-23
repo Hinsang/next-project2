@@ -19,3 +19,4 @@ module.exports = () => {
 
   local(); // LocalStrategy 부분 받아서 실행
 }
+
