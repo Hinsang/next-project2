@@ -55,8 +55,8 @@ app.use(session({
   cookie: {
     httpOnly: true,
     secure: false,
-    sameSite: process.env.NODE_ENV === "production" ? 'none' : 'lax',
-    secure: process.env.NODE_ENV === "production",
+    // sameSite: process.env.NODE_ENV === "production" ? 'none' : 'lax',
+    // secure: process.env.NODE_ENV === "production",
   }
 }));
 app.use(passport.initialize());
