@@ -48,7 +48,7 @@ router.post('/login', isNotLoggedIn, (req, res, next) => { // 패스포트에서
         return next(loginErr); // 패스포트에서 로그인 실패시 에러 출력
       }
       const fullUserWithoutPassword = await User.findOne({ // 비밀번호 없는 유저정보를 넘겨줌(보안강화)
-        where: { nickname: user.nickname }, // user id를 찾는다.
+        where: { id: user.id }, // user id를 찾는다.
         attributes: {
           exclude: ['password'] // exclude 안의 정보만 빼고 받는다.
         }, // 여기에 입력한 속성만 받는다.
@@ -57,7 +57,6 @@ router.post('/login', isNotLoggedIn, (req, res, next) => { // 패스포트에서
         //   attributes: ['id'],
         // }]
       })
-      console.log(user.id);
       return res.status(200).json(fullUserWithoutPassword); // 패스포트에서도 로그인 에러가 없을 시 user 데이터를 json 형식으로 프론트에 넘겨줌 (action.data)
     }); // 성공시 req.login으로 로그인
   })(req, res, next);

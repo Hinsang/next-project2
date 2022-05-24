@@ -4,7 +4,7 @@ const { User } = require('../models');
 
 module.exports = () => {
   passport.serializeUser((user, done) => {
-    done(null, user.id) // 암호화 쿠키와 묶어줄 아이디 정보 저장
+    done(null, user.nickname) // 암호화 쿠키와 묶어줄 아이디 정보 저장
   });
 
   passport.deserializeUser(async (id, done) => {
