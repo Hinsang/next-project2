@@ -30,9 +30,6 @@ db.sequelize.sync().then(() => {
 // app.options -> 선택 찔러보기
 // app.head -> 헤더만 가져오기
 
-app.use(express.json()); // 프론트에서 받은 json 형식의 데이터를 req.body로 넣어주는 역할
-app.use(express.urlencoded({ extended: true })); // 프론트에서 받은 폼데이터를 req.body로 넣어주는 역할
-
 passportConfig(); // passport 폴더 실행
 
 if (process.env.NODE_ENV === "proudction") {
@@ -47,6 +44,8 @@ app.use(cors({
   credentials: true, // 도메인간에 쿠키 전달 (front saga에도 withCredentials: true 설정을 해주어야 한다.)
 }));
 app.use('/', express.static(path.join(__dirname, 'uploads'))) // express가 uploads폴더를 프론트에 제공
+app.use(express.json()); // 프론트에서 받은 json 형식의 데이터를 req.body로 넣어주는 역할
+app.use(express.urlencoded({ extended: true })); // 프론트에서 받은 폼데이터를 req.body로 넣어주는 역할
 // '/'는 백엔드 호스트, __dirname 현재 위치하는 폴더에 uploads폴더를 합쳐줌. 운영체제마다 경로가 다르므로 노드에서 제공하는 path.join을 사용함
 app.use(cookieParser(process.env.COOKIE_SECRET))
 app.use(session({
