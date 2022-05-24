@@ -40,7 +40,7 @@ if (process.env.NODE_ENV === "proudction") {
   app.use(morgan('dev'));
 }
 app.use(cors({
-  origin: ['http://localhost:3000', 'next-project.com', 'http://54.180.8.15'], // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
+  origin: ['http://localhost:3000', 'waxis.co.kr'], // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
   credentials: true, // 도메인간에 쿠키 전달 (front saga에도 withCredentials: true 설정을 해주어야 한다.)
 }));
 app.use('/', express.static(path.join(__dirname, 'uploads'))) // express가 uploads폴더를 프론트에 제공
@@ -53,8 +53,9 @@ app.use(session({
   resave: false,
   secret: process.env.COOKIE_SECRET,
   cookie: {
-    httpOnly: true,
-    secure: false,
+    httpOnly: true, // 자바스크립트가 아닌 오직 http로 접근할 수 있게 해줌 (보안)
+    secure: false, // https 적용할땐 true
+    domain: process.env.NODE_ENV === 'production' && '.waxis.co.kr' // 배포모드일때 도메인간에 쿠키공유 (waxis.co.kr과 api.waxis.co.kr)
     // sameSite: process.env.NODE_ENV === "production" ? 'none' : 'lax',
     // secure: process.env.NODE_ENV === "production",
   }
