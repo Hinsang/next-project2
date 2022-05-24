@@ -1,9 +1,8 @@
 const express = require('express');
-const app = express();
 const cors = require('cors');
-const passport = require('passport');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+const passport = require('passport');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const path = require('path');
@@ -16,6 +15,7 @@ const db = require('./models');
 const passportConfig = require('./passport');
 
 dotenv.config(); // dotenv 리콰이어해서 back폴더의 .env 호출
+const app = express();
 
 db.sequelize.sync().then(() => {
   console.log('db 연결 성공')
