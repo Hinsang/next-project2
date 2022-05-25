@@ -36,13 +36,17 @@ if (process.env.NODE_ENV === "proudction") {
   app.use(morgan('combined')); // 배포 모드일때 로그가 자세해짐. 접속자의 ip도 알 수 있음
   app.use(hpp());
   app.use(helmet());
+  app.use(cors({
+    origin: 'http://waxis.co.kr', // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
+    credentials: true, // 도메인간에 쿠키 전달 (front saga에도 withCredentials: true 설정을 해주어야 한다.)
+  }));
 } else {
   app.use(morgan('dev'));
+  app.use(cors({
+    origin: 'http://localhost:3000', // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
+    credentials: true, // 도메인간에 쿠키 전달 (front saga에도 withCredentials: true 설정을 해주어야 한다.)
+  }));
 }
-app.use(cors({
-  origin: ['http://localhost:3000', 'waxis.co.kr'], // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
-  credentials: true, // 도메인간에 쿠키 전달 (front saga에도 withCredentials: true 설정을 해주어야 한다.)
-}));
 app.use('/', express.static(path.join(__dirname, 'uploads'))) // express가 uploads폴더를 프론트에 제공
 app.use(express.json()); // 프론트에서 받은 json 형식의 데이터를 req.body로 넣어주는 역할
 app.use(express.urlencoded({ extended: true })); // 프론트에서 받은 폼데이터를 req.body로 넣어주는 역할
