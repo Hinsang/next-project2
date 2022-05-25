@@ -43,7 +43,7 @@ if (process.env.NODE_ENV === "proudction") {
 } else {
   app.use(morgan('dev'));
   app.use(cors({
-    origin: 'http://localhost:3000', // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
+    origin: true,
     credentials: true, // 도메인간에 쿠키 전달 (front saga에도 withCredentials: true 설정을 해주어야 한다.)
   }));
 }
