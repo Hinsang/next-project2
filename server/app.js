@@ -37,7 +37,7 @@ if (process.env.NODE_ENV === "proudction") {
   app.use(hpp());
   app.use(helmet());
   app.use(cors({
-    origin: 'http://waxis.co.kr', // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
+    origin: 'https://waxis.co.kr', // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
     credentials: true, // 도메인간에 쿠키 전달 (front saga에도 withCredentials: true 설정을 해주어야 한다.)
   }));
 } else {
