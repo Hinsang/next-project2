@@ -1,1 +1,1 @@
-export const backUrl = 'https://api.waxis.co.kr';
+export const backUrl = 'http://api.waxis.co.kr';
