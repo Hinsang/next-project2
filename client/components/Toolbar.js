@@ -20,7 +20,7 @@ function Toolbar() {
   return (
     <div className={styles.inner}>
       <div style={{ height: '10px' }} />
-      <Link href="/" prefetch={false}>
+      <Link href="/">
         {/* <span className={styles.title}>
           NEXT
         </span> */}
@@ -42,7 +42,7 @@ function Toolbar() {
         : (
           <span>
             <span className={styles.toolbar_box}>
-              <Link href="Signup" prefetch={false}>
+              <Link href="Signup">
                 <span className={styles.toolbar}>
                   회원가입
                 </span>
@@ -52,7 +52,7 @@ function Toolbar() {
               |
             </span>
             <span className={styles.toolbar_box}>
-              <Link href="/Login" prefetch={false}>
+              <Link href="/Login">
                 <span className={styles.toolbar}>
                   로그인
                 </span>
@@ -63,19 +63,19 @@ function Toolbar() {
       }
 
       <div className={styles.title_line} />
-      <Link href="/" prefetch={false}>
+      <Link href="/">
         <span className={styles.side_toolbar}>Home</span>
       </Link>
       {/* <Link href="/Board/Post">
         <span className={styles.side_toolbar}>Board</span>
       </Link> */}
-      <Link href="/Studies" prefetch={false}>
+      <Link href="/Studies">
         <span className={styles.side_toolbar}>Studies</span>
       </Link>
-      <Link href="/Mypage" prefetch={false}>
+      <Link href="/Mypage">
         <span className={styles.side_toolbar}>About</span>
       </Link>
-      <Link href="/Introduce" prefetch={false}>
+      <Link href="/Introduce">
         <span className={styles.side_toolbar}>Introduce</span>
       </Link>
       {/* <Link href="/Board">

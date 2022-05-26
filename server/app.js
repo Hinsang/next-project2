@@ -32,6 +32,7 @@ db.sequelize.sync().then(() => {
 
 passportConfig(); // passport 폴더 실행
 
+app.set('trust proxy', 1);
 if (process.env.NODE_ENV === "proudction") {
   app.use(morgan('combined')); // 배포 모드일때 로그가 자세해짐. 접속자의 ip도 알 수 있음
   app.use(hpp());
