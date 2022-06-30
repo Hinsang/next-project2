@@ -1,11 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Router from 'next/router';
+import { useRouter } from 'next/router';
 import PostForm from '../../components/PostForm';
 
 function Post() {
   const { me } = useSelector((state) => state.user);
   // const { logInDone } = useSelector((state) => state.user);
+  const Router = useRouter();
 
   if (!me) {
     Router.push('/');
