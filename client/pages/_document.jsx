@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+// 위에 안넣어주면 배포때 에러남
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
