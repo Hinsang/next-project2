@@ -23,7 +23,7 @@ const Introduce = () => {
   });
   return (
     <div style={{ width: '1000px', margin: '0 auto' }}>
-      <h2 className="text" style={{ marginBottom: '40px' }}>{ text }</h2>
+      <div className="text" style={{ fontSize: '24px', fontWeight: 700, marginBottom: '40px' }}>{ text }</div>
       {textDone3
         ? <Introduce1 />
         : <div />}

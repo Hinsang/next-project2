@@ -5,16 +5,21 @@ import produce from 'immer';
 // import { useEffect } from 'react';
 // import axios from 'axios';
 // import { useSelector } from 'react-redux';
+import { LOAD_MY_INFO_REQUEST } from './user';
 
 export const initialState = {
   // 여기에 필요한 스테이트 넣기
   mainPosts: [],
+  hasMorePosts: true,
   loadPostsLoading: false,
   loadPostsDone: false,
   loadPostsError: null,
   addPostLoading: false,
   addPostDone: false,
   addPostError: null,
+  removePostLoading: false,
+  removePostDone: false,
+  removePostError: null,
 };
 
 // 더미데이터를 무작위로 넣는다면 어래와같이 넣어준다.
@@ -44,13 +49,21 @@ export const ADD_POST_SUCCESS = 'ADD_POST_SUCCESS';
 export const ADD_POST_FAILURE = 'ADD_POST_FAILURE';
 export const ADD_POST_RESET = 'ADD_POST_RESET';
 
-export const LOAD_POSTS_REQUEST = 'LOAD_POST_REQUEST';
-export const LOAD_POSTS_SUCCESS = 'LOAD_POST_SUCCESS';
-export const LOAD_POSTS_FAILURE = 'LOAD_POST_FAILURE';
+export const REMOVE_POST_REQUEST = 'REMOVE_POST_REQUEST';
+export const REMOVE_POST_SUCCESS = 'REMOVE_POST_SUCCESS';
+export const REMOVE_POST_FAILURE = 'REMOVE_POST_FAILURE';
+
+export const LOAD_POSTS_REQUEST = 'LOAD_POSTS_REQUEST';
+export const LOAD_POSTS_SUCCESS = 'LOAD_POSTS_SUCCESS';
+export const LOAD_POSTS_FAILURE = 'LOAD_POSTS_FAILURE';
 
 export const UPLOAD_IMAGES_REQUEST = 'UPLOAD_IMAGES_REQUEST';
 export const UPLOAD_IMAGES_SUCCESS = 'UPLOAD_IMAGES_SUCCESS';
 export const UPLOAD_IMAGES_FAILURE = 'UPLOAD_IMAGES_FAILURE';
+
+export const LOAD_USER_POSTS_REQUEST = 'LOAD_USER_POSTS_REQUEST';
+export const LOAD_USER_POSTS_SUCCESS = 'LOAD_USER_POSTS_SUCCESS';
+export const LOAD_USER_POSTS_FAILURE = 'LOAD_USER_POSTS_FAILURE';
 
 // export const LOAD_POSTS_REQUEST = 'LOAD_POSTS_REQUEST';
 // export const LOAD_POSTS_SUCCESS = 'LOAD_POSTS_SUCCESS';
@@ -103,6 +116,21 @@ const reducer = (state = initialState, action) => produce(state, (draft) => {
     case ADD_POST_RESET:
       draft.addPostDone = false;
       break;
+    case REMOVE_POST_REQUEST:
+      draft.removePostLoading = true;
+      draft.removePostDone = false;
+      draft.removePostError = null;
+      break;
+    case REMOVE_POST_SUCCESS:
+      draft.removePostLoading = false;
+      draft.removePostDone = true;
+      draft.mainPosts = draft.mainPosts.filter((v) => v.id !== action.data.PostId);
+      // 게시글을 v (value) 파라미터로 받고, 그 게시글들에서 삭제성공한 게시글아이디와 같지 않은 것들만 남겨서 저장
+      break;
+    case REMOVE_POST_FAILURE:
+      draft.removePostLoading = false;
+      draft.removePostError = action.error;
+      break;
     case LOAD_POSTS_REQUEST:
       draft.loadPostsLoading = true;
       draft.loadPostsDone = false;
@@ -113,6 +141,8 @@ const reducer = (state = initialState, action) => produce(state, (draft) => {
       draft.loadPostsDone = true;
       draft.loadPostsError = null;
       draft.mainPosts = draft.mainPosts.concat(action.data);
+      draft.hasMorePosts = action.data.length === 10; // 10개 단위로 인피니티 스크롤링 하는데,
+      // 10개가 안되서 false가 되면, 더이상 불러올 필요가 없다는 의미이다.
       break;
     case LOAD_POSTS_FAILURE:
       draft.loadPostsLoading = false;

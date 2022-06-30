@@ -8,8 +8,8 @@ const morgan = require('morgan');
 const path = require('path');
 const hpp = require('hpp');
 const helmet = require('helmet');
-// const postRouter = require('./routes/post');
-// const postsRouter = require('./routes/posts');
+const postRouter = require('./routes/post');
+const postsRouter = require('./routes/posts');
 const userRouter = require('./routes/user');
 const db = require('./models');
 const passportConfig = require('./passport');
@@ -17,7 +17,7 @@ const passportConfig = require('./passport');
 dotenv.config(); // dotenv 리콰이어해서 back폴더의 .env 호출
 const app = express();
 
-db.sequelize.sync().then(() => {
+db.sequelize.sync({ alter : true }).then(() => { // alter: true를 넣어서 seqeulize를 자동 업데이트 시킨다. 이거때매 너무 헤맸다.. ㅠㅠ
   console.log('db 연결 성공')
 }).catch(console.error) // 서버 실행할때 DB 시퀄라이즈 연결
 
@@ -38,7 +38,7 @@ if (process.env.NODE_ENV === "proudction") {
   app.use(hpp());
   app.use(helmet());
   app.use(cors({
-    origin: 'http://waxis.co.kr', // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
+    origin: ['http://waxis.co.kr', 'http://localhost:3000'], // credentials가 true일 경우 정확한 프론트 주소를 입력해준다.
     credentials: true, // 도메인간에 쿠키 전달 (front saga에도 withCredentials: true 설정을 해주어야 한다.)
   }));
 } else {
@@ -80,9 +80,9 @@ app.get('/', (req, res) => {
     //   })
     // });
     
-    // app.use('/post', postRouter);
-    // app.use('/posts', postsRouter);
     app.use('/user', userRouter);
+    app.use('/post', postRouter);
+    app.use('/posts', postsRouter);
     
     // app.use((err, req, res, next) => {
       

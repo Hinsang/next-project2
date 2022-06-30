@@ -5,12 +5,12 @@ import styles from '../../components/Studies1.module.css';
 const studies2 = () => (
   <div style={{ width: '1000px', margin: '0 auto' }}>
     <StudiesSection />
-    <div style={{ marginTop: '60px' }}>
-      <h3>2. 패스트캠퍼스</h3>
-      <p>
+    <div style={{ marginTop: '60px', marginBottom: '20px' }}>
+      <div style={{ fontSize: '20px', fontWeight: 700, marginBottom: '20px' }}>2. 패스트캠퍼스</div>
+      <div style={{ fontSize: '16px', fontWeight: 500 }}>
         HTML, CSS, JS 웹 퍼블리싱에 대한 기초를 자세히 배울 수 있었던 인강이었다. 스타벅스 메인페이지를 만들어보면서
         레이아웃 잡는법과 간단한 js모듈들을 사용해보았다.
-      </p>
+      </div>
       {/* <a href="https://wizardly-chandrasekhar-941eb3.netlify.app/" target="_parent" rel="noreferrer"><u>링크</u></a> */}
     </div>
     <div className={styles.s4} style={{ marginRight: 10 }} />

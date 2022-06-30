@@ -6,6 +6,9 @@ import { useDispatch, useSelector } from 'react-redux';
 // import Router from 'next/router';
 import Router from 'next/router';
 import { loginRequestAction, SIGN_UP_RESET, SIGN_UP_SUCCESS } from '../reducers/user';
+// import 'antd/es/date-picker/style/css';
+// import 'antd/dist/antd.css';
+import styles from '../components/Login.module.css';
 
 const Login = () => {
   const { logInDone, logInLoading, logInError } = useSelector((state) => state.user);
@@ -53,14 +56,14 @@ const Login = () => {
 
   return (
     <div style={{ width: '1000px', margin: '0 auto' }}>
-      <div style={{ margin: 20 }} />
-      <Form onFinish={onSubmitForm} style={{ margin: 20 }}>
+      {/* <div style={{ margin: 20 }} /> */}
+      <Form className={styles.form} onFinish={onSubmitForm}>
         <div>
           <label htmlFor="user-id">아이디</label>
           <br />
-          <input name="user-id" value={nickname} onChange={onChangeId} required />
+          <Input name="user-id" value={nickname} onChange={onChangeId} required />
         </div>
-        <div style={{ marginTop: '5px' }}>
+        <div style={{ marginTop: '20px' }}>
           <label htmlFor="user-password">비밀번호</label>
           <br />
           <Input
@@ -71,7 +74,7 @@ const Login = () => {
             required
           />
         </div>
-        <div>
+        <div style={{ marginTop: 5 }}>
           <Button style={{ marginTop: 15 }} htmlType="submit" loading={logInLoading}>로그인</Button>
           &nbsp;&nbsp;
           <Link href="/Signup"><a><Button>회원가입</Button></a></Link>

@@ -4,7 +4,7 @@ import styles from './introduce1.module.css';
 const Introduce1 = () => (
   <div style={{ display: 'flex' }}>
     <span style={{ width: '60%' }}>
-      <h3 className={styles.description}>
+      <div className={styles.description}>
         프론트엔드 개발자를 꿈꾸는 황인상입니다.
         <br />
         컴퓨터에 관심이 많아서 컴퓨터 소프트웨어 공학과 4년제를 전공했고,
@@ -28,7 +28,8 @@ const Introduce1 = () => (
         책임감과 인내심으로 성실하게 일을 수행하겠습니다.
         <br />
         또한, 앞으로도 꿈을 위해 꾸준히 공부하며 실력을 정진하겠습니다.
-      </h3>
+
+      </div>
     </span>
     <span style={{ width: '40%' }}>
       <div className={styles.me} />

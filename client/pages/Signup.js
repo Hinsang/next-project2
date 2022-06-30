@@ -1,10 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { Button, Form, Input } from 'antd';
-import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import Router from 'next/router';
-import useInput from '../hooks/useInput';
+// import 'antd/dist/antd.css';
+import { Button, Form, Input } from 'antd';
+import styled from 'styled-components';
 import { SIGN_UP_REQUEST, SIGN_UP_RESET } from '../reducers/user';
+import useInput from '../hooks/useInput';
+import styles from '../components/Signup.module.css';
 
 const Errormessage = styled.div`
     color: red;
@@ -75,24 +77,25 @@ function Signup() {
   }, [signUpDone]);
   return (
     <div style={{ width: '1000px', margin: '0 auto' }}>
-      <Form onFinish={onSubmit}>
-        <label htmlFor="user-id" style={{ marginRight: '5px' }}>아이디</label>
-        <br />
-        <Input name="user-id" value={nickname} required onChange={onChangeId} />
-        {idError && <Errormessage>아이디는 3자 이상으로 해주세요.</Errormessage>}
-        <br />
-        <br />
-        <label htmlFor="user-password" style={{ marginRight: '5px' }}>비밀번호</label>
-        <br />
-        <Input name="user-password" type="password" value={password} required onChange={onChangePassword} />
-        {passwordError && <Errormessage>비밀번호는 3자 이상으로 해주세요.</Errormessage>}
-        <br />
-        <br />
-        <label htmlFor="user-password" style={{ marginRight: '5px' }}>비밀번호 확인</label>
-        <br />
-        <Input name="user-password" type="password" value={passwordCheck} required onChange={onChangePasswordCheck} />
-        {passwordCheckError && <Errormessage>비밀번호가 일치하지 않습니다.</Errormessage>}
-        <br />
+      <Form className={styles.form} onFinish={onSubmit}>
+        <div>
+          <label htmlFor="user-id" style={{ marginRight: '5px' }}>아이디</label>
+          <br />
+          <Input name="user-id" value={nickname} required onChange={onChangeId} />
+          {idError && <Errormessage>아이디는 3자 이상으로 해주세요.</Errormessage>}
+        </div>
+        <div style={{ marginTop: 20 }}>
+          <label htmlFor="user-password" style={{ marginRight: '5px' }}>비밀번호</label>
+          <br />
+          <Input name="user-password" type="password" value={password} required onChange={onChangePassword} />
+          {passwordError && <Errormessage>비밀번호는 3자 이상으로 해주세요.</Errormessage>}
+        </div>
+        <div style={{ marginTop: 20 }}>
+          <label htmlFor="user-password" style={{ marginRight: '5px' }}>비밀번호 확인</label>
+          <br />
+          <Input name="user-password" type="password" value={passwordCheck} required onChange={onChangePasswordCheck} />
+          {passwordCheckError && <Errormessage>비밀번호가 일치하지 않습니다.</Errormessage>}
+        </div>
         <Button style={{ marginTop: '20px' }} type="primary" htmlType="submit" loading={signUpLoading}>가입하기</Button>
       </Form>
     </div>

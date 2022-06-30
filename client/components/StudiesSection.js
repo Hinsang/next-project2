@@ -4,7 +4,7 @@ import styles from './Studies1.module.css';
 
 const StudiesSection = () => (
   <div>
-    <h2 className="text" style={{ marginBottom: '40px' }}>공부한 내용들</h2>
+    <div className="text" style={{ fontSize: '24px', fontWeight: 700, marginBottom: '40px' }}>공부한 내용들</div>
     <div style={{ display: 'flex' }}>
       <Link href="/Studies/1">
         <div className={styles.studies_box}>

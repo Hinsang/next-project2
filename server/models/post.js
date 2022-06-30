@@ -1,9 +1,13 @@
 module.exports = (sequelize, DataTypes) => {
-  const Post = sequelize.define('Post', { // 자동으로 MySQL에는 users 테이블 생성
+  const Post = sequelize.define('Post', {
   // id가 기본적으로 들어있음
-    content: {
-      type: DataTypes.TEXT,
+    title: {
+      type: DataTypes.STRING(30),
       allowNull: false,
+    },
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: false, // 필수 입력값인지 아닌지 여부 (false는 필수)
     },
   }, {
     charset: 'utf8mb4', // DB에 한글, 이모티콘을 쓸 수 있게 해줌

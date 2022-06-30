@@ -5,9 +5,11 @@ import styles from '../../components/Studies1.module.css';
 const studies4 = () => (
   <div style={{ width: '1000px', margin: '0 auto' }}>
     <StudiesSection />
-    <div style={{ marginTop: '60px' }}>
-      <h3>4. 코딩애플 React 강의</h3>
-      React, Nodejs를 집중적으로 배웠고, 이를 바탕으로 개발블로그, 쇼핑몰페이지, todoApp을 만들어보았다.
+    <div style={{ marginTop: '60px', marginBottom: '20px' }}>
+      <div style={{ fontSize: '20px', fontWeight: 700, marginBottom: '20px' }}>4. 코딩애플 React 강의</div>
+      <div style={{ fontSize: '16px', fontWeight: 500 }}>
+        React, Nodejs를 집중적으로 배웠고, 이를 바탕으로 개발블로그, 쇼핑몰페이지, todoApp을 만들어보았다.
+      </div>
     </div>
     <div className={styles.s10} style={{ marginRight: 10 }} />
     <div className={styles.s11} style={{ marginRight: 10 }} />

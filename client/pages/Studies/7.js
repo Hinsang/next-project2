@@ -6,8 +6,10 @@ const studies7 = () => (
   <div style={{ width: '1000px', margin: '0 auto' }}>
     <StudiesSection />
     <div style={{ marginTop: '60px' }}>
-      <h3>7. 이미지관리 풀스택</h3>
-      MERN스택으로 만들었으며, next, saga, redux를 활용해 새롭게 리뉴얼 해보았다.
+      <div style={{ fontSize: '20px', fontWeight: 700, marginBottom: '20px' }}>7. 이미지관리 풀스택</div>
+      <div style={{ fontSize: '16px', fontWeight: 500 }}>
+        MERN스택으로 만들었으며, next, saga, redux를 활용해 새롭게 리뉴얼 해보았다.
+      </div>
     </div>
     <div style={{ marginTop: 20 }}>
       <div className={styles.s21} style={{ marginRight: 10 }} />
