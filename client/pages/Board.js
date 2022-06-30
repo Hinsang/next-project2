@@ -54,7 +54,7 @@ const Board = () => {
           ? (
             <div><div style={{ fontSize: '16px', fontWeight: 700 }}>피드백을 남겨주세요 (DB에 저장됩니다, 삭제가능)</div>
               <br />
-              <Link href="/Board/Post"><Button>글쓰기</Button></Link>
+              <Link href="/Board/Post">글쓰기</Link>
             </div>
           )
           : <div style={{ fontSize: '16px', fontWeight: 700 }}>글을 작성하려면 로그인 해주세요!!</div>
