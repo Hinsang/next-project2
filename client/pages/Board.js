@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import { Button } from 'antd';
 import Link from 'next/link';
 import { useSelector, useDispatch } from 'react-redux';
-import axios from 'axios';
-import { END } from 'redux-saga';
+// import axios from 'axios';
+// import { END } from 'redux-saga';
 import { LOAD_POSTS_REQUEST } from '../reducers/post';
 // import PostCard from '../components/PostCard';
 import PostCard from '../components/PostCard';
-import wrapper from '../configure/configure';
-import { LOAD_MY_INFO_REQUEST } from '../reducers/user';
+// import wrapper from '../configure/configure';
+// import { LOAD_MY_INFO_REQUEST } from '../reducers/user';
 
 const Board = () => {
   const { me } = useSelector((state) => state.user);

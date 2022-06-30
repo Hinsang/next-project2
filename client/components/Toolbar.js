@@ -2,12 +2,12 @@ import React, { useCallback } from 'react';
 import Link from 'next/link';
 import { useSelector, useDispatch } from 'react-redux';
 // import PropTypes from 'prop-types';
-import axios from 'axios';
-import { END } from 'redux-saga';
+// import axios from 'axios';
+// import { END } from 'redux-saga';
 import styles from './Toolbar.module.css';
-import { LOAD_MY_INFO_REQUEST, logoutRequestAction } from '../reducers/user';
-import wrapper from '../configure/configure';
-import { LOAD_POSTS_REQUEST } from '../reducers/post';
+import { logoutRequestAction } from '../reducers/user';
+// import wrapper from '../configure/configure';
+// import { LOAD_POSTS_REQUEST } from '../reducers/post';
 
 function Toolbar() {
   const { me } = useSelector((state) => state.user);

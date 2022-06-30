@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 // import PostImages from './PostImages';
 import { useSelector, useDispatch } from 'react-redux';
 import moment from 'moment';
-import axios from 'axios';
-import { END } from 'redux-saga';
+// import axios from 'axios';
+// import { END } from 'redux-saga';
 import styles from './PostCard.module.css';
-import wrapper from '../configure/configure';
-import { LOAD_MY_INFO_REQUEST } from '../reducers/user';
+// import wrapper from '../configure/configure';
+// import { LOAD_MY_INFO_REQUEST } from '../reducers/user';
 import { REMOVE_POST_REQUEST } from '../reducers/post';
 
 const PostCard = ({ post }) => {

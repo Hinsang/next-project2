@@ -8,7 +8,7 @@ import { END } from 'redux-saga';
 import Toolbar from '../components/Toolbar';
 import wrapper from '../configure/configure';
 import { LOAD_MY_INFO_REQUEST } from '../reducers/user';
-import { LOAD_POSTS_REQUEST } from '../reducers/post';
+// import { LOAD_POSTS_REQUEST } from '../reducers/post';
 // import '../styles/globals.css';
 import 'antd/dist/antd.css';
 
