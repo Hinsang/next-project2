@@ -6,10 +6,10 @@ import PostForm from '../../components/PostForm';
 function Post() {
   const { me } = useSelector((state) => state.user);
   // const { logInDone } = useSelector((state) => state.user);
-  const Router = useRouter();
+  const router = useRouter();
 
   if (!me) {
-    Router.push('/');
+    router.push('/');
   }
 
   return (
